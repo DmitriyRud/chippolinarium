@@ -1,0 +1,249 @@
+.swiper {
+  /* min-width: 600px; */
+  max-height: 600px;
+  /* margin-bottom: 50px; */
+  margin: auto;
+}
+.image-slider {
+  text-align: center;
+}
+.image-slider img {
+  max-width: 100%;
+}
+.slide1 {
+  position: relative;
+}
+.slide1-text {
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  opacity: 1;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide1-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.slide1-title h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 125px;
+  color: #fff;
+  font-weight: 1000;
+  text-shadow: 1px 1px 5px black;
+}
+
+.slide1-title p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 85px;
+  color: #fff;
+  text-shadow: 1px 1px 5px black;
+}
+
+.image_text_container {
+  width: 50rem;
+  margin-top: 2rem;
+}
+
+.slide2 {
+  position: relative;
+}
+.slide2-container {
+  
+  position: absolute;
+  height: 10%;
+  top: 25%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  opacity: 1;
+  text-shadow: 1px 1px 5px black;
+  font-weight: 600;
+}
+
+.slide2-item {
+  font-family: 'Amatic SC', cursive;
+  font-size: 65px;
+  color: #fff;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+  max-height: 50%;
+}
+
+.home-title-text {
+  font-size: 36px;
+  margin-bottom: 40px;
+  margin-top: 3rem;
+}
+.home-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.home-price {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.price-form {
+  width: 50%;
+  background-color: var(--primary-color);
+  padding: 30px;
+  color: var(--color-form-text);
+  border-radius: 6px;
+  margin-bottom: 10rem;
+min-width: 20rem;
+}
+.price-form-title {
+  margin-bottom: 30px;
+  text-align: center;
+  align-self: start;
+}
+.price-form-description {
+  margin-bottom: 30px;
+  color: var(--color-form-text);
+  text-align: center;
+}
+.form-price__input {
+  background-color: var(--color-form-text);
+}
+.price-btn {
+  background-color: var(--color-form-text);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 700;
+  width: 100%;
+}
+.price-btn:hover {
+  background-color: var(--color-chipollino);
+  color: var(--primary-color);
+}
+.advantages-inner {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.advantages-item {
+  max-width: 30%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.advantages-img {
+  margin-bottom: 1.5rem;
+  height: 5rem;
+}
+.advantages-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.advantaged-descr {
+  text-align: center;
+  margin-bottom: 2rem;
+  height: 6rem;
+}
+.advantages-btn {
+  color: var(--color-form-text);
+  background-color: var(--color-chipollino);
+}
+
+.advantages-btn:hover {
+  color: var(--color-form-text);
+  background-color: #5a6241;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  padding-bottom: 2rem;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .home-title-text {
+    font-size: 28px;
+    
+  }
+}
+
+@media (max-width: 678px) {
+  .slide1-title h2{
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+   }
+   .slide1-title p{
+    font-size: 55px;
+   }
+   .image-slider{
+    width: 100%;
+   }
+   .home-title-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .slide1-title h2{
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+   }
+   .slide1-title p{
+    font-size: 30px;
+   }
+   .slide2-item{
+    font-size: 30px;
+  }
+  .slide2-container{
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .home-title-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .home-title-description{
+    font-size: 12px;
+  }
+  .advantages-img img {
+    height: 4rem;
+  }
+  .advantages-img {
+    margin-bottom: 0rem;
+    height: 4rem;
+  }
+  .advantages-title{
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+  .advantaged-descr {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 11.5px;
+    height: 4rem;
+  }
+}
+@media (max-width: 365px) {
+  .advantaged-descr{
+    height: 5rem;
+  }
+}

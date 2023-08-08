@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.containerCategory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.card {
+  width: 20rem;
+  margin-bottom: 4rem;
+  /* Add the following styles */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 12rem;
+}
+
+.card-text p {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-title {
+  margin: 2rem 0;
+}
+
+.card-body {
+  min-height: 8rem;
+}
+
+.allItems-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.allItems {
+  background-color: var(--primary-color);
+  color: var(--color-chipollino);
+}
+
+.card-title {
+  text-align: center;
+}
+
+#btnAdmin {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+#btnAdmin:hover {
+  color: black;
+}
+
+.btn-card {
+  background-color: var(--color-dark-green);
+  color: var(--color-button);
+}
+
+.btn-card:hover {
+  background-color: var(--color-chipollino);
+  color: var(--color-dark-green);
+}
+
+.card-btn {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.itemPriceRequest {
+  width: 70%;
+}
+
+.editBtn {
+  width: 50%;
+}
+
+.deleteBtn {
+  width: 30%;
+  background-color: red;
+}
+
+.card-hidden {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('/image/board-1.jpg');
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.form_catalog {
+  background-color: #fff;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sendCategory {
+  margin: 1rem;
+  border: 1px solid black;
+}
+
+.sendCategory:hover {
+  border: 1px solid black;
+  background-color: var(--color-dark-green);
+}
+
+#btnSend {
+  border: 1px solid black;
+}
+
+@media (max-width: 900px) {
+  .containerCategory {
+    padding-top: 2rem;
+  }
+}
