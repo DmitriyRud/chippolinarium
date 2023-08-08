@@ -10,15 +10,14 @@ module.exports = function Catalog({ categories, email }) {
 
       <div className="container">
         <div className="allItems-container container">
-          {email ? (
-            <a href="/accountPanel" className="btn btn-card btn-seeItems">
+          {email && (
+            <a href="/accountPanel" className="btn btn-seeItems">
               Добавить новую категорию
             </a>
-          ) : (
-            <a className="btn button_price" href="catalog/items">
-              показать все товары
-            </a>
           )}
+          <a className="btn button_price" href="catalog/items">
+            показать все товары
+          </a>
         </div>
 
         <div className="containerCategory">
@@ -113,7 +112,7 @@ module.exports = function Catalog({ categories, email }) {
                         id={`title-${category.id}`}
                         type="text"
                         name="title"
-                        value={category.title}
+                        defaultValue={category.title}
                         className="form-control"
                       />
                       <br />
@@ -124,7 +123,7 @@ module.exports = function Catalog({ categories, email }) {
                         id={`description-${category.id}`}
                         type="text"
                         name="description"
-                        value={category.description}
+                        defaultValue={category.description}
                         className="form-control"
                       />
                       <br />

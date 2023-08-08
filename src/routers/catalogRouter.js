@@ -3,7 +3,6 @@ const router = require('express').Router();
 const renderTemplate = require('../lib/renderTemplate');
 const Items = require('../views/Items');
 const Catalog = require('../views/Catalog');
-const AllItems = require('../views/AllItems');
 
 const { Category, Item } = require('../../db/models');
 
@@ -40,7 +39,7 @@ router.get('/items', async (req, res) => {
     const { email } = req.session;
     const categories = await Category.findAll({ raw: true });
     const items = await Item.findAll({ raw: true });
-    renderTemplate(AllItems, { categories, items, email }, res);
+    renderTemplate(Items, { categories, items, email }, res);
   } catch (err) {
     console.error(err);
   }

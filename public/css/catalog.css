@@ -44,7 +44,10 @@
 
 .allItems-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding-top: 2rem;
 }
 

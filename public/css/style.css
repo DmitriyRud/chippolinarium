@@ -74,14 +74,16 @@ footer {
   color: #000;
 }
 
-.button_price {
+.button_price,
+.btn-seeItems {
   color: var(--color-button);
   background-color: var(--color-dark-green);
   width: 50%;
   padding: 0.5rem;
 }
 
-.button_price:hover {
+.button_price:hover,
+.btn-seeItems:hover {
   background-color: var(--color-chipollino);
   color: var(--color-text);
 }

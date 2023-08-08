@@ -76,7 +76,7 @@ module.exports = function Layout({ children, categories }) {
                   <p className="contact_header__text">📞 +7(968)6361473</p>
                 </a>
                 <a href="https://wa.me/79686361472" className="whatsapp_link">
-                  <img src="./image/whatsapp24.png" alt="whatsapp" />
+                  <img src="/image/whatsapp24.png" alt="whatsapp" />
                   +7(968)6361472
                 </a>
                 <a
@@ -259,7 +259,7 @@ module.exports = function Layout({ children, categories }) {
                     <p className="contact_header__text">📞 +7(968)6361473</p>
                   </a>
                   <a href="https://wa.me/79686361472" className="whatsapp_link">
-                    <img src="./image/whatsapp24.png" alt="whatsapp" />
+                    <img src="/image/whatsapp24.png" alt="whatsapp" />
                     +7(968)6361472
                   </a>
                 </div>
