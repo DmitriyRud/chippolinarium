@@ -6,6 +6,10 @@ module.exports = function Layout({ children, categories }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="google-site-verification"
+          content="D1ujA9t6wjA2ytykliC-5kX2x2CDH-CahwYAQsm5clM"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
