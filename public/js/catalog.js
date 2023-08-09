@@ -60,7 +60,15 @@ containerCategory.addEventListener('click', async (event) => {
           const itemText = document.getElementById(
             `card-text-${event.target.dataset.sendEditCategory}`
           );
-          itemText.innerText = result.description;
+
+          itemText.innerHTML = '';
+          const linesArr = result.description.split('\n');
+          for (let i = 0; i < linesArr.length; i++) {
+            const newLine = document.createElement('p');
+            newLine.innerText = linesArr[i];
+            newLine.classList.add('text-center');
+            itemText.appendChild(newLine);
+          }
         } else if (result.error) {
           paragraph.innerText = result.error;
         }

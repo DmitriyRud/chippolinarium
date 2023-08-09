@@ -125,6 +125,7 @@ module.exports = function Catalog({ categories, email }) {
                         name="description"
                         defaultValue={category.description}
                         className="form-control"
+                        rows="8"
                       />
                       <br />
                       <button

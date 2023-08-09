@@ -5,7 +5,7 @@ const dialogForm = document.querySelector('.dialogForm');
 
 const itemPriceRequest = document.querySelectorAll('.itemPriceRequest');
 
-const modalPriceBtn = document.querySelector('.modalPriceBtn');
+// const modalPriceBtn = document.querySelector('.modalPriceBtn');
 
 const modalList = document.querySelector('.modal_list');
 

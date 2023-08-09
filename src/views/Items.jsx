@@ -33,7 +33,7 @@ module.exports = function Items({ categories, email, items }) {
                     <h5 id={`card-title-${item.id}`} className="card-title">
                       {item.name}
                     </h5>
-                    <div className="card-text">
+                    <div className="card-text" id={`card-text-${item.id}`}>
                       {item.description.split('\n').map((line, index) => (
                         <p key={`${item.id}line${index}`}>{line}</p>
                       ))}
@@ -127,6 +127,7 @@ module.exports = function Items({ categories, email, items }) {
                         name="description"
                         value={item.description}
                         className="form-control"
+                        rows="8"
                       />
                       <br />
                       <button

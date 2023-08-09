@@ -26,7 +26,7 @@ module.exports = function Layout({ children, categories }) {
           integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
           crossOrigin="anonymous"
         />
-        <script defer src="/js/modalHeader.js" />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"

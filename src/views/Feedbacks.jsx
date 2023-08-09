@@ -59,6 +59,7 @@ module.exports = function Feedback({ categories, feedbacks }) {
                 className="form-control"
                 id="exampleInputPassword1"
                 placeholder="Ваше мнение о нас..."
+                rows="10"
               />
             </div>
             <div className="div_buttons_feedback">
