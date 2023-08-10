@@ -56,6 +56,7 @@ module.exports = function Layout({ children, categories }) {
         <link rel="manifest" href="/site.webmanifest" />
         <title>Чиполинарий</title>
         <script src="yandex" />
+        <script defer src="/js/modalHeader.js" />
       </head>
       <body>
         <header>

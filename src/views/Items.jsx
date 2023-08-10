@@ -7,7 +7,6 @@ module.exports = function Items({ categories, email, items }) {
       <link rel="stylesheet" href="/css/catalog.css" />
       <link rel="stylesheet" href="/css/home.css" />
       <script defer src="/js/item.js" />
-      <script defer src="/js/modalHeader.js" />
 
       <div id={items.category_id} className="container item-container">
         <div className="allItems-container container">
