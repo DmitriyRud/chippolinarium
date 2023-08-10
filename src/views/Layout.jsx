@@ -2,7 +2,7 @@ const React = require('react');
 
 module.exports = function Layout({ children, categories }) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,11 @@ module.exports = function Layout({ children, categories }) {
           integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
           crossOrigin="anonymous"
         />
-
+        <link
+          rel="icon"
+          href="https://soleniya.online/favicon.ico"
+          type="image/x-icon"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -48,8 +52,10 @@ module.exports = function Layout({ children, categories }) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+
         <link rel="manifest" href="/site.webmanifest" />
         <title>Чиполинарий</title>
+        <script src="yandex" />
       </head>
       <body>
         <header>

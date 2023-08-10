@@ -4,12 +4,6 @@ const Layout = require('./Layout');
 module.exports = function Home({ categories }) {
   return (
     <Layout categories={categories}>
-      <link
-        type="image/png"
-        sizes="32x32"
-        rel="icon"
-        href="/image/favicon.png"
-      ></link>
       <script defer src="/js/requestPriceHome.js" />
       <link
         rel="stylesheet"
