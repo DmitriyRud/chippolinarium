@@ -2,8 +2,14 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function Home({ categories }) {
+  const metaTags = {
+    title: 'Соленья и салаты [🥗 более 40 оригинальных рецептов]',
+    description:
+      'Производство и снабжение соленьями и салатами 🥫магазинов, 🍱ресторанов, 🌭кафе, 🛌гостиниц, 🥣столовых, 🍹баров, 🧁комбинатов питания',
+    robots: 'index, follow',
+  };
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories} metatags={metaTags}>
       <script defer src="/js/requestPriceHome.js" />
       <link
         rel="stylesheet"

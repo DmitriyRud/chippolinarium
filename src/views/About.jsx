@@ -2,8 +2,14 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function About({ categories }) {
+  const metaTags = {
+    title: 'О компании [ ООО "ИНМАРКО ПЛЮС" ]',
+    description:
+      'Соленья и салаты: Информация о компании, процессе производства и контроле качества',
+    robots: 'index, follow',
+  };
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories} metatags={metaTags}>
       <link rel="stylesheet" href="/css/about.css" />
       <div className="container about-container">
         <h2 className="about-title">О компании Инмарко Плюс</h2>
@@ -19,14 +25,15 @@ module.exports = function About({ categories }) {
           <div className="item-inner">
             <p className="item-inner-text inner-text">
               Наша команда талантливых шеф-поваров и кулинаров разработала
-              уникальные рецепты для каждой категории нашего ассортимента.{' '}
+              уникальные рецепты для каждой категории нашего ассортимента.
               <br />
               Мы тщательно подбирали самые лучшие сочетания ингредиентов и
-              приправ, чтобы создать блюда с богатым и насыщенным вкусом. <br />{' '}
+              приправ, чтобы создать блюда с богатым и насыщенным вкусом.
+              <br />
               Наша цель - удивить вас разнообразием и качеством наших салатов.
             </p>
             <div className="item__img">
-              <img className="item-image" src="/image/cook.jpg" />
+              <img className="item-image" src="/image/cook.jpg" alt="cooking" />
             </div>
           </div>
         </div>
@@ -34,7 +41,11 @@ module.exports = function About({ categories }) {
           <h3>Контроль качества производства</h3>
           <div className="item-inner">
             <div className="item__img2">
-              <img className="item-image" src="/image/control.jpeg" />
+              <img
+                className="item-image"
+                src="/image/control.jpeg"
+                alt="quality"
+              />
             </div>
             <div className="item-inner-text">
               <p className="inner-text">

@@ -3,8 +3,13 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function Login({ categories }) {
+  const metaTags = {
+    title: 'Вход для администратора',
+    description: 'Только для сотрудников ООО Инмарко Плюс',
+    robots: 'noindex, nofollow',
+  };
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories} metatags={metaTags}>
       <script defer src="/js/adminPanel.js" />
       <div className="login_container">
         <form id="logForm" name="logName">
@@ -39,7 +44,6 @@ module.exports = function Login({ categories }) {
           </button>
         </form>
         <hr />
-        
       </div>
     </Layout>
   );

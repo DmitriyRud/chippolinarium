@@ -56,7 +56,7 @@ router.get('/:id', async (req, res) => {
       include: Category,
     });
 
-    renderTemplate(Items, { categories, items, email }, res);
+    renderTemplate(Items, { categories, items, email, category_id: id }, res);
   } catch (err) {
     console.error(err);
   }

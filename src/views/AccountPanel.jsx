@@ -3,8 +3,13 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function AccountPanel({ categories, feedbacks, managers }) {
+  const metaTags = {
+    title: 'Кабинет администратора',
+    description: 'Настройка сайта: Только для сотрудников ООО Инмарко Плюс',
+    robots: 'noindex, nofollow',
+  };
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories} metatags={metaTags}>
       <link rel="stylesheet" href="/css/account.css" />
       <script defer src="/js/accountPanel.js" />
       <script defer src="/js/managerEmail.js" />

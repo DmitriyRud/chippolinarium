@@ -2,8 +2,20 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function Catalog({ categories, email }) {
+  let descriptionStr = categories.map((el) => `✅${el.title}`).join(', ');
+
+  while (descriptionStr.length > 150) {
+    const lastInd = descriptionStr.lastIndexOf(', ');
+    descriptionStr = descriptionStr.slice(0, lastInd);
+  }
+
+  const metaTags = {
+    title: 'Каталог вкусностей [ 🍵 соленья и салаты ]',
+    description: descriptionStr,
+    robots: 'index, follow',
+  };
   return (
-    <Layout categories={categories} email={email}>
+    <Layout categories={categories} email={email} metatags={metaTags}>
       <script defer src="/js/catalog.js" />
       <link rel="stylesheet" href="/css/style.css" />
       <link rel="stylesheet" href="/css/catalog.css" />

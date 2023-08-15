@@ -1,14 +1,32 @@
+/* eslint-disable camelcase */
 const React = require('react');
 const Layout = require('./Layout');
 
-module.exports = function Items({ categories, email, items }) {
+module.exports = function Items({ categories, email, items, category_id }) {
+  const categoryObj = categories.filter((e) => e.id === Number(category_id))[0];
+  const categoryId = categoryObj.id || -1;
+  const pageTitle = categoryId
+    ? `${categoryObj.title} [ Чиполинарий ]`
+    : 'Каталог продукции [ Чиполинарий ]';
+  let descriptionStr = items.map((el) => `✅${el.name}`).join(', ');
+
+  while (descriptionStr.length > 150) {
+    const lastInd = descriptionStr.lastIndexOf(', ');
+    descriptionStr = `${descriptionStr.slice(0, lastInd)} ...`;
+  }
+
+  const metaTags = {
+    title: pageTitle,
+    description: descriptionStr,
+    robots: 'index, follow',
+  };
   return (
-    <Layout categories={categories} email={email}>
+    <Layout categories={categories} email={email} metatags={metaTags}>
       <link rel="stylesheet" href="/css/catalog.css" />
       <link rel="stylesheet" href="/css/home.css" />
       <script defer src="/js/item.js" />
 
-      <div id={items.category_id} className="container item-container">
+      <div className="container item-container">
         <div className="allItems-container container">
           {email && (
             <a href="/accountPanel" className="btn btn-card">

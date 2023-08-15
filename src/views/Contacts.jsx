@@ -3,8 +3,14 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function Contacts({ categories }) {
+  const metaTags = {
+    title: 'Контакты [ ООО "ИНМАРКО ПЛЮС" ]',
+    description:
+      'Информация о 🌎метонахождении, 📬способах связи и 🕑режиме работы компании',
+    robots: 'index, follow',
+  };
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories} metatags={metaTags}>
       <link rel="stylesheet" href="/css/contacts.css" />
       <div className="container contacts_container">
         <div className="contacts">

@@ -3,8 +3,14 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function Delivery({ categories, deliveries, email }) {
+  const metaTags = {
+    title: 'Доставка [ 🥗 соленья и салаты ]',
+    description:
+      '🚌Виды, 💰стоимость, 🌎регионы и 🎁условия доставки наших вкусных салатов и солений',
+    robots: 'index, follow',
+  };
   return (
-    <Layout categories={categories} email={email}>
+    <Layout categories={categories} email={email} metatags={metaTags}>
       <script defer src="/js/delivery.js" />
       <link rel="stylesheet" href="/css/delivery.css" />
       <div className="delivery-container">

@@ -1,11 +1,25 @@
 const React = require('react');
 
-module.exports = function Layout({ children, categories }) {
+module.exports = function Layout({
+  children,
+  categories,
+  metatags = {
+    title: 'Чиполинарий',
+    description:
+      'Производство и снабжение соленьями и салатами магазинов, ресторанов, кафе, гостиниц, столовых, баров, комбинатов питания',
+    robots: 'index, follow',
+  },
+}) {
   return (
     <html lang="ru">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{metatags.title}</title>
+        <meta name="description" content={metatags.description} />
+        <meta name="robots" content={metatags.robots} />
+        <meta name="rating" content="safe for kids" />
+        <meta name="author" content="Dmitriy Rudakov" />
         <meta
           name="google-site-verification"
           content="D1ujA9t6wjA2ytykliC-5kX2x2CDH-CahwYAQsm5clM"
@@ -54,7 +68,6 @@ module.exports = function Layout({ children, categories }) {
         />
 
         <link rel="manifest" href="/site.webmanifest" />
-        <title>Чиполинарий</title>
         <script src="yandex" />
         <script defer src="/js/modalHeader.js" />
       </head>

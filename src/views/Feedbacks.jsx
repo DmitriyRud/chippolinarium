@@ -3,8 +3,13 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function Feedback({ categories, feedbacks }) {
+  const metaTags = {
+    title: 'Отзывы клиентов [ 📣Чиполинарий ]',
+    description: 'Что пишут о нашей компании и продукции наши 💕клиенты',
+    robots: 'index, follow',
+  };
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories} metatags={metaTags}>
       <link rel="stylesheet" href="/css/feedback.css" />
       <script defer src="/js/feedback.js" />
       <div className="main_feedback_container">
