@@ -11,6 +11,7 @@ module.exports = function About({ categories }) {
   return (
     <Layout categories={categories} metatags={metaTags}>
       <link rel="stylesheet" href="/css/about.css" />
+      <link rel="canonical" href="https://soleniya.online/about" />
       <div className="container about-container">
         <h2 className="about-title">О компании Инмарко Плюс</h2>
         <p className="about-text">

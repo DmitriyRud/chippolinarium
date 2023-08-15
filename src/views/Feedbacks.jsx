@@ -11,6 +11,7 @@ module.exports = function Feedback({ categories, feedbacks }) {
   return (
     <Layout categories={categories} metatags={metaTags}>
       <link rel="stylesheet" href="/css/feedback.css" />
+      <link rel="canonical" href="https://soleniya.online/feedback" />
       <script defer src="/js/feedback.js" />
       <div className="main_feedback_container">
         <button

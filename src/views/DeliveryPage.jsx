@@ -13,6 +13,7 @@ module.exports = function Delivery({ categories, deliveries, email }) {
     <Layout categories={categories} email={email} metatags={metaTags}>
       <script defer src="/js/delivery.js" />
       <link rel="stylesheet" href="/css/delivery.css" />
+      <link rel="canonical" href="https://soleniya.online/delivery" />
       <div className="delivery-container">
         <h2 className="delivery-title">
           Доставка продуктов в рестораны и кафе

@@ -4,10 +4,11 @@ const Layout = require('./Layout');
 
 module.exports = function Items({ categories, email, items, category_id }) {
   const categoryObj = categories.filter((e) => e.id === Number(category_id))[0];
-  const categoryId = categoryObj.id || -1;
-  const pageTitle = categoryId
-    ? `${categoryObj.title} [ Чиполинарий ]`
-    : 'Каталог продукции [ Чиполинарий ]';
+  const categoryId = categoryObj ? categoryObj.id : -1;
+  const pageTitle =
+    categoryId && categoryObj
+      ? `${categoryObj.title} [ Чиполинарий ]`
+      : 'Каталог продукции [ Чиполинарий ]';
   let descriptionStr = items.map((el) => `✅${el.name}`).join(', ');
 
   while (descriptionStr.length > 150) {

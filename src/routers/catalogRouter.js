@@ -39,7 +39,7 @@ router.get('/items', async (req, res) => {
     const { email } = req.session;
     const categories = await Category.findAll({ raw: true });
     const items = await Item.findAll({ raw: true });
-    renderTemplate(Items, { categories, items, email }, res);
+    renderTemplate(Items, { categories, items, email, category_id: -1 }, res);
   } catch (err) {
     console.error(err);
   }

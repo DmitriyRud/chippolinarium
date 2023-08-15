@@ -11,6 +11,7 @@ module.exports = function Home({ categories }) {
   return (
     <Layout categories={categories} metatags={metaTags}>
       <script defer src="/js/requestPriceHome.js" />
+      <link rel="canonical" href="https://soleniya.online/" />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"

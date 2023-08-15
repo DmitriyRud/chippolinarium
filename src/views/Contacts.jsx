@@ -12,6 +12,7 @@ module.exports = function Contacts({ categories }) {
   return (
     <Layout categories={categories} metatags={metaTags}>
       <link rel="stylesheet" href="/css/contacts.css" />
+      <link rel="canonical" href="https://soleniya.online/contacts" />
       <div className="container contacts_container">
         <div className="contacts">
           <h2 className="titleCotn"> Контакты </h2>

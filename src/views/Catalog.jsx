@@ -19,7 +19,7 @@ module.exports = function Catalog({ categories, email }) {
       <script defer src="/js/catalog.js" />
       <link rel="stylesheet" href="/css/style.css" />
       <link rel="stylesheet" href="/css/catalog.css" />
-
+      <link rel="canonical" href="https://soleniya.online/catalog" />
       <div className="container">
         <div className="allItems-container container">
           {email && (
