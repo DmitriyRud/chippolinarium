@@ -26,7 +26,14 @@ module.exports = function Items({ categories, email, items, category_id }) {
       <link rel="stylesheet" href="/css/catalog.css" />
       <link rel="stylesheet" href="/css/home.css" />
       <script defer src="/js/item.js" />
-
+      <link
+        rel="canonical"
+        href={
+          Number(category_id) >= 0
+            ? `https://soleniya.online/catalog/${category_id}`
+            : 'https://soleniya.online/catalog/items'
+        }
+      />
       <div className="container item-container">
         <div className="allItems-container container">
           {email && (
