@@ -39,7 +39,7 @@ module.exports = function Home({ categories }) {
                 </div>
               </div>
               <div className="image-slider">
-                <img src="/image/slider/slider-1.jpg" />
+                <img src="/image/slider/slider-1.jpg" alt="salats" />
               </div>
             </div>
             <div className="swiper-slide slide2">
@@ -49,12 +49,12 @@ module.exports = function Home({ categories }) {
                 <div className="slide2-item">Удобно</div>
               </div>
               <div className="image-slider">
-                <img src="/image/slider/slider-2.jpg" />
+                <img src="/image/slider/slider-2.jpg" alt="salats2" />
               </div>
             </div>
             <div className="swiper-slide">
               <div className="image-slider">
-                <img src="/image/slider/slider-3.jpg" />
+                <img src="/image/slider/slider-3.jpg" alt="salats3" />
               </div>
             </div>
           </div>
