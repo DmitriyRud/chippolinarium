@@ -15,7 +15,7 @@ module.exports = {
     await queryInterface.bulkInsert('Deliveries', [
       {
         order_price: 'Москва: от 40 000 руб.',
-        delivery_price: 'бесплатно',
+        delivery_price: 'Бесплатно',
         createdAt: new Date(),
         updatedAt: new Date(),
       },

@@ -111,7 +111,7 @@ module.exports = function Layout({
                   &#x69;&#x6e;&#x6d;&#x61;&#x72;&#x63;&#x6f;&#x70;&#x6c;&#x75;&#x73;&#x40;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x72;&#x75;
                 </a>
                 <button type="button" className=" btn button_price">
-                  Узнать цены
+                  Подробности
                 </button>
               </div>
             </div>
@@ -185,10 +185,10 @@ module.exports = function Layout({
                       &times;
                     </button>
                   </div>
-                  <h3 className="price-form-title">Узнайте актуальные цены</h3>
+                  <h3 className="price-form-title">Узнайте подробности</h3>
                   <div className="price-form-description">
-                    Заполните форму и мы пришлем Вам информацию об актуальных
-                    ценах
+                    Заполните форму и мы свяжемся с Вами, чтобы предоставить всю
+                    необходимую информацию
                     <p className="price_form_alert_modal" />
                   </div>
                   <form method="POST">

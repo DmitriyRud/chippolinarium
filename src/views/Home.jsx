@@ -73,9 +73,10 @@ module.exports = function Home({ categories }) {
           </div>
           <div className="home-price">
             <div className="price-form">
-              <h3 className="price-form-title">Узнайте актуальные цены</h3>
+              <h3 className="price-form-title">Узнайте подробности</h3>
               <div className="price-form-description formOnHome">
-                Заполните форму и мы пришлем Вам информацию об актуальных ценах
+                Заполните форму и мы свяжемся с Вами, чтобы предоставить всю
+                необходимую информацию
                 <p className="price_form_alert_home" />
               </div>
               <form className="formRequestPriceHome">
