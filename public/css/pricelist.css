@@ -1,0 +1,38 @@
+.price-container {
+  padding: 3rem;
+}
+
+.price-title {
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+.rows-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.category-title {
+  font-weight: bold;
+}
+
+.package-title td:not(:first-child) {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.content-tr td:not(:nth-child(2)) {
+  text-align: center;
+}
+
+.content-tr td {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.content-tr:hover td {
+  background-color: var(--color-form-text);
+}

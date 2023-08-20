@@ -149,6 +149,11 @@ module.exports = function Layout({
                         </a>
                       </li>
                       <li className="nav-item">
+                        <a className="nav-link" href="/prices">
+                          Наши цены
+                        </a>
+                      </li>
+                      <li className="nav-item">
                         <a className="nav-link" href="/delivery">
                           Доставка
                         </a>

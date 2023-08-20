@@ -20,6 +20,7 @@ const catalogRouter = require('./src/routers/catalogRouter');
 const modalRouter = require('./src/routers/modalRouter');
 const aboutRouter = require('./src/routers/aboutRouter');
 const adminPanel = require('./src/routers/adminPanelRouter');
+const priceListRouter = require('./src/routers/priceListRouter');
 
 const sessionConfig = {
   name: process.env.COOKIE_NAME,
@@ -64,6 +65,7 @@ app.use('/catalog', catalogRouter);
 app.use('/about', aboutRouter);
 app.use('/adminPanel', adminPanel);
 app.use('/modalpice', modalRouter);
+app.use('/prices', priceListRouter);
 
 app.get('/404', (req, res) => {
   res.send('Page not found');

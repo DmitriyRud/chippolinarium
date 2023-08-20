@@ -14,14 +14,14 @@ module.exports = {
      */
     await queryInterface.bulkInsert('Deliveries', [
       {
-        order_price: 'Менее 5000 рублей',
-        delivery_price: '2000 рублей',
+        order_price: 'Москва: от 40 000 руб.',
+        delivery_price: 'бесплатно',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        order_price: '5000 рублей и более',
-        delivery_price: 'Бесплатно',
+        order_price: 'Московская обл.',
+        delivery_price: 'По договоренности',
         createdAt: new Date(),
         updatedAt: new Date(),
       },

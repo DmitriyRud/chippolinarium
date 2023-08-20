@@ -15,9 +15,7 @@ module.exports = function Delivery({ categories, deliveries, email }) {
       <link rel="stylesheet" href="/css/delivery.css" />
       <link rel="canonical" href="https://soleniya.online/delivery" />
       <div className="delivery-container">
-        <h2 className="delivery-title">
-          Доставка продуктов в рестораны и кафе
-        </h2>
+        <h2 className="delivery-title">Доставка нашей продукции</h2>
         <div className="delivery-inner">
           <div className="text-container">
             <p>
@@ -26,14 +24,12 @@ module.exports = function Delivery({ categories, deliveries, email }) {
               общественного питания, но и физическим лицам (на дом) по Москве и
               МО.
             </p>
-
             <p>
-              Доставка товара в пределах МКАД от 6.000 тыс.руб бесплатно, за
-              пределами МКАД доставка обсуждается индивидуально.
-            </p>
-            <p>
-              Заказы принимаются удобным для Вас способом по телефону
-              +7(495)7951054. Оперативная доставка 24/7!
+              Обращаясь в компанию &quot;Инмарко Плюс&quot;, Вы сможете
+              размещать заказы на любые виды виды солений и салатов,
+              представленные в нашем каталоге. При размещении заказа наши
+              менеджеры свяжутся с Вами для консультации и ответят на все
+              интересующие Вас вопросы.
             </p>
           </div>
 
@@ -43,12 +39,6 @@ module.exports = function Delivery({ categories, deliveries, email }) {
             alt="delivery_image"
           />
         </div>
-        <p>
-          Обращаясь в компанию &quot;Инмарко Плюс&quot;, Вы сможете размещать
-          заказы на любые виды виды солений и салатов, представленные в нашем
-          каталоге. При размещении заказа наши менеджеры свяжутся с Вами для
-          консультации и ответят на все интересующие Вас вопросы.
-        </p>
 
         <div className="delivery">
           <h2 className="delivery-title">
