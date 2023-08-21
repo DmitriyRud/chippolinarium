@@ -9,7 +9,11 @@ module.exports = function Items({ categories, email, items, category_id }) {
     categoryId && categoryObj
       ? `${categoryObj.title} [ Чиполинарий ]`
       : 'Каталог продукции [ Чиполинарий ]';
-  let descriptionStr = items.map((el) => `✅${el.name}`).join(', ');
+  let descriptionStr = items.map((el) => `✅${el.name}`);
+  if (categoryId === -1) {
+    descriptionStr = descriptionStr.sort(() => Math.random() - 0.5);
+  }
+  descriptionStr = descriptionStr.join(', ');
 
   while (descriptionStr.length > 150) {
     const lastInd = descriptionStr.lastIndexOf(', ');
@@ -116,12 +120,13 @@ module.exports = function Items({ categories, email, items, category_id }) {
                               key={`cat-${category.id}`}
                               value={category.title}
                               selected={category.id === item.category_id}
+                              onChange={() => {}}
                             >
                               {category.title}
                             </option>
                           ))
                         ) : (
-                          <option value="" disabled>
+                          <option value="" disabled onChange={() => {}}>
                             No categories available
                           </option>
                         )}
@@ -143,6 +148,7 @@ module.exports = function Items({ categories, email, items, category_id }) {
                         name="name"
                         value={item.name}
                         className="form-control"
+                        onChange={() => {}}
                       />
                       <br />
                       <label htmlFor="pic_input">Описание товара:</label>
@@ -153,6 +159,7 @@ module.exports = function Items({ categories, email, items, category_id }) {
                         value={item.description}
                         className="form-control"
                         rows="8"
+                        onChange={() => {}}
                       />
                       <br />
                       <button
