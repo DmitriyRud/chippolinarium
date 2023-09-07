@@ -36,3 +36,44 @@ table {
 .content-tr:hover td {
   background-color: var(--color-form-text);
 }
+
+.price-inputs {
+  width: 70px;
+}
+
+.btn-card {
+  background-color: var(--color-dark-green);
+  color: var(--color-button);
+}
+
+.btn-card:hover {
+  background-color: var(--color-chipollino);
+  color: var(--color-dark-green);
+}
+
+.saveBtn {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.item-add-td,
+.item-del-td {
+  padding: 0;
+}
+
+.item-add-td button {
+  border-radius: 5px;
+  width: 85%;
+  color: #4cbd36;
+  font-weight: bold;
+  font-size: large;
+  margin-left: 3px;
+}
+
+.item-del-td button {
+  border-radius: 5px;
+  width: 85%;
+  color: #e92d27;
+  font-weight: bold;
+  font-size: large;
+}
