@@ -77,3 +77,69 @@ table {
   font-weight: bold;
   font-size: large;
 }
+
+@media (max-width: 800px) {
+  .price-container {
+    padding: 1rem 5px;
+  }
+
+  .content-tr td:first-child {
+    font-size: 0;
+    width: 0px !important;
+    padding: 0;
+    border: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .content-tr td:nth-child(n+3) {
+    font-size: 0.8rem;
+  }
+
+  .package-title td:nth-child(n+2) {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .content-tr td:nth-child(2) {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #price-table {
+    margin-left: -10px;
+  }
+
+  .category-title {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .rows-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .content-tr td:nth-child(n+3) {
+    font-size: 0.6rem;
+  }
+
+  .package-title td:nth-child(n+2) {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .content-tr td:nth-child(2) {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .content-tr td:nth-child(n+2) {
+    font-size: 0.4rem;
+  }
+}
