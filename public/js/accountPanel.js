@@ -36,7 +36,7 @@ newCategory.addEventListener('submit', async (event) => {
         createCategory.innerText = 'Ошибка базы данных';
       }
     } catch (error) {
-      console.log('owibka', error);
+      console.log(error);
     }
   }
 });
@@ -95,7 +95,7 @@ cardFeedback.addEventListener('click', async (e) => {
         }, 2000);
       }
     } catch (error) {
-      console.log('owibka', error);
+      console.log(error);
     }
   } else if (
     e.target.tagName === 'BUTTON' &&
@@ -259,7 +259,7 @@ newItem.addEventListener('submit', async (event) => {
       createItem.innerText = 'Ошибка базы данных';
     }
   } catch (error) {
-    console.log('owibka', error);
+    console.log(error);
   }
 });
 updateAdminBtn.addEventListener('click', (event) => {
@@ -312,7 +312,7 @@ updateForm.addEventListener('submit', async (event) => {
         message.innerText = result.success;
       }
     } catch (error) {
-      console.log('FRONT', error);
+      console.log(error);
     }
   }
 });

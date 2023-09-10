@@ -14,17 +14,6 @@ module.exports = function PriceList({ categories, email, prices, items }) {
     }
     return '';
   }
-  // console.log(items);
-  // let categoriesArr = [
-  //   {
-  //     category_id: 1,
-  //     items: [
-  //       {
-  //        ...
-  //       }
-  //     ]
-  //   }
-  // ]
 
   const categoriesArr = categories.map((cat) => ({
     category_id: cat.id,
@@ -37,10 +26,6 @@ module.exports = function PriceList({ categories, email, prices, items }) {
     category_id: category.category_id,
     items: category.items.filter((item) => !priceIds.has(item.id)),
   }));
-
-  // console.log(categoriesArr);
-
-  // console.log(prices);
 
   return (
     <Layout categories={categories} metatags={metaTags}>

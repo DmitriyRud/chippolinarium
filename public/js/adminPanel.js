@@ -28,7 +28,7 @@ logForm.addEventListener('click', async (e) => {
           window.location.href = '/accountPanel';
         }
       } catch (error) {
-        console.log('Что-то пошло не так');
+        console.log(error);
       }
     }
   }

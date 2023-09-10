@@ -15,10 +15,11 @@ const transporter = nodemailer.createTransport({
 });
 
 modalRouter.post('/', async (req, res) => {
-  const usersMailObject = await ManagerEmail.findAll({ attributes: ['email'], raw: true });
-  console.log(usersMailObject);
+  const usersMailObject = await ManagerEmail.findAll({
+    attributes: ['email'],
+    raw: true,
+  });
   const usersMail = usersMailObject.map((el) => el.email);
-  console.log(usersMail);
   const { name, phone, email } = req.body;
   const mailData = {
     from: 'chipolinaryi@gmail.com',
@@ -31,7 +32,7 @@ modalRouter.post('/', async (req, res) => {
 
   transporter.sendMail(mailData, (error, info) => {
     if (error) {
-      return console.log('==========', error);
+      return console.log(error);
     }
     res.status(200).send({ message: 'Mail send', message_id: info.messageId });
   });

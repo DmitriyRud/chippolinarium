@@ -77,7 +77,7 @@ dialogForm.addEventListener('submit', async (event) => {
         priceFormAlertModal.innerText = '';
       }, 5000);
     } catch (error) {
-      console.log('что-то пошло не так', error);
+      console.log(error);
     }
   }
 });

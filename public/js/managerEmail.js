@@ -37,7 +37,7 @@ managerForm.addEventListener('submit', async (event) => {
         managerMessage.innerText = result.msg;
       }
     } catch (error) {
-      console.log('owibka', error);
+      console.log(error);
     }
   }
 });

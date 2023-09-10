@@ -55,7 +55,6 @@ priceContainer.addEventListener('click', async (e) => {
     buttonSave1.removeAttribute('disabled');
     buttonSave2.removeAttribute('disabled');
     e.target.setAttribute('disabled', true);
-    // console.log('updatedPrices : ', updatedPrices);
   } else if (e.target.id.includes('btnDel-')) {
     const delPriceId = e.target.parentNode.id.split('-')[2];
     const response = await fetch('/prices', {
@@ -118,5 +117,4 @@ priceTable.addEventListener('change', (e) => {
       updatedPrices[updPriceInd].itemName = e.target.value;
     }
   }
-  // console.log('updatedPrices : ', updatedPrices);
 });
