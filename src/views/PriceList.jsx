@@ -34,7 +34,7 @@ module.exports = function PriceList({ categories, email, prices, items }) {
       <script defer src="/js/priceList.js" />
       <div className="container price-container" id="price-container">
         <h2 className="price-title">Наши цены</h2>
-        {email && (
+        {email ? (
           <button
             type="button"
             className="btn btn-card saveBtn"
@@ -43,6 +43,16 @@ module.exports = function PriceList({ categories, email, prices, items }) {
           >
             Сохранить
           </button>
+        ) : (
+          <a href="/prices/pricelist.pdf" target="blank" download="">
+            <button
+              type="button"
+              className="btn btn-card saveBtn"
+              id="btnPrice-1"
+            >
+              Скачать прайс-лист
+            </button>
+          </a>
         )}
         <table id="price-table">
           <tr>
@@ -214,7 +224,7 @@ module.exports = function PriceList({ categories, email, prices, items }) {
             </React.Fragment>
           ))}
         </table>
-        {email && (
+        {email ? (
           <button
             type="button"
             className="btn btn-card saveBtn"
@@ -223,6 +233,16 @@ module.exports = function PriceList({ categories, email, prices, items }) {
           >
             Сохранить
           </button>
+        ) : (
+          <a href="/prices/pricelist.pdf" target="blank" download="">
+            <button
+              type="button"
+              className="btn btn-card saveBtn"
+              id="btnPrice-2"
+            >
+              Скачать прайс-лист
+            </button>
+          </a>
         )}
       </div>
     </Layout>

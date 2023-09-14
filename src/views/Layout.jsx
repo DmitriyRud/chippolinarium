@@ -249,9 +249,9 @@ module.exports = function Layout({
                     <li className="supplies_item">Доставка продуктов</li>
                   </a>
 
-                  <li type="button" className="supplies_item modal_list">
-                    Цены
-                  </li>
+                  <a href="/prices">
+                    <li className="supplies_item modal_list">Цены</li>
+                  </a>
 
                   <a href="/about">
                     <li className="supplies_item">О нас</li>
