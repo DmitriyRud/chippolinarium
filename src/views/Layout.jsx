@@ -250,7 +250,7 @@ module.exports = function Layout({
                   </a>
 
                   <a href="/prices">
-                    <li className="supplies_item modal_list">Цены</li>
+                    <li className="supplies_item">Цены</li>
                   </a>
 
                   <a href="/about">
