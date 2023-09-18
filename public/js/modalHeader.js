@@ -7,8 +7,6 @@ const itemPriceRequest = document.querySelectorAll('.itemPriceRequest');
 
 // const modalPriceBtn = document.querySelector('.modalPriceBtn');
 
-const modalList = document.querySelector('.modal_list');
-
 const closeModalWindow = document.querySelector('.closeModalWindow');
 
 const priceFormAlertModal = document.querySelector('.price_form_alert_modal');
@@ -23,9 +21,9 @@ itemPriceRequest.forEach((el) => {
   });
 });
 
-modalList.addEventListener('click', (event) => {
-  dialog.showModal();
-});
+// modalList.addEventListener('click', (event) => {
+//   dialog.showModal();
+// });
 
 closeModalWindow.addEventListener('click', (event) => {
   dialog.close();
