@@ -96,8 +96,8 @@ module.exports = function Layout({
                 <a href="tel:+74957951054" className="phone_link">
                   <p className="contact_header__text">📞 +7(495)7951054</p>
                 </a>
-                <a href="tel:+79686361473" className="phone_link">
-                  <p className="contact_header__text">📞 +7(968)6361473</p>
+                <a href="tel:+79854723376" className="phone_link">
+                  <p className="contact_header__text">📞 +7(985)4723376</p>
                 </a>
                 <a href="https://wa.me/79686361472" className="whatsapp_link">
                   <img src="/image/whatsapp24.png" alt="whatsapp" />
@@ -284,8 +284,8 @@ module.exports = function Layout({
                   <a href="tel:+74957951054" className="phone_link">
                     <p className="contact_header__text">📞 +7(495)7951054</p>
                   </a>
-                  <a href="tel:+79686361473" className="phone_link">
-                    <p className="contact_header__text">📞 +7(968)6361473</p>
+                  <a href="tel:+79854723376" className="phone_link">
+                    <p className="contact_header__text">📞 +7(985)4723376</p>
                   </a>
                   <a href="https://wa.me/79686361472" className="whatsapp_link">
                     <img src="/image/whatsapp24.png" alt="whatsapp" />
