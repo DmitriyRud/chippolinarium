@@ -23,12 +23,20 @@ function renderTemplate(component, props, res) {
   <noscript><div><img src="https://mc.yandex.ru/watch/94588413" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 `;
+  const googleAnaliticsScript = `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQ511XBKFB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YQ511XBKFB');
+</script>`;
   const reactEl = React.createElement(component, props);
   const html = ReactDOMServer.renderToStaticMarkup(reactEl);
-  const finalHtml = html.replace(
-    '<script src="yandex"></script>',
-    yandexMetricaScript
-  );
+  const finalHtml = html
+    .replace('<script src="yandex"></script>', yandexMetricaScript)
+    .replace('<script src="google"></script>', googleAnaliticsScript);
   res.send(`<!DOCTYPE html>${finalHtml}`);
   res.end();
 }

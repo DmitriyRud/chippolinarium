@@ -13,6 +13,7 @@ module.exports = function Layout({
   return (
     <html lang="ru">
       <head>
+        <script src="google" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{metatags.title}</title>
