@@ -31,7 +31,7 @@ const sessionConfig = {
   cookie: {
     maxAge: 9999999999,
     httpOnly: true,
-    SameSite: 'Secure',
+    SameSite: 'lax',
   },
 };
 const app = express();
