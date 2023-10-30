@@ -17,31 +17,29 @@ module.exports = function Contacts({ categories }) {
         <div className="contacts">
           <h2 className="titleCotn"> Контакты </h2>
           <p>
-            {' '}
-            <strong> ЮРИДИЧЕСКИЙ АДРЕС: </strong> 142117, МОСКОВСКАЯ ОБЛАСТЬ, Г.
-            ПОДОЛЬСК УЛ. КИРОВА 62А
+            <strong> ЮРИДИЧЕСКИЙ И ПОЧТОВЫЙ АДРЕС: </strong>
+            <br />
+            105028,г.Москва, пл.Спартаковская, д.14, стр.3,помещение 9Н/2
           </p>
           <p>
-            {' '}
-            <strong> АДРЕС ПРОИЗВОДСТВА: </strong> МО ЛУХОВИЦКИЙ РАЙОН С.
-            НИЖНЕ-МАСЛОВО УЛ. МОЛОДЁЖНАЯ 11 А{' '}
+            <strong> ФАКТИЧЕСКИЙ АДРЕС: </strong>
+            <br />
+            140500 , Мос.обл. Луховицкий район, поселок Врачево Горки, ул.
+            Центральная, д.10
           </p>
           <p>
-            {' '}
-            <strong> Часы приема заказов: </strong> ежедневно 10:00-22:00{' '}
+            <strong> Часы приема заказов: </strong> ежедневно 10:00-22:00
           </p>
 
           <p>
-            {' '}
-            <strong> Отдел продаж: </strong>{' '}
+            <strong> Отдел продаж: </strong>
           </p>
           <ul className="ul_contacts">
-            <li className="li_contacts"> +7 (495) 7951054 </li>
+            <li className="li_contacts"> +7 (985) 472 33 76 </li>
           </ul>
 
           <p>
-            {' '}
-            <strong> Для писем: </strong>{' '}
+            <strong> Для писем: </strong>
           </p>
           <ul className="ul_contacts">
             <li className="li_contacts"> INMARCOPLUS@MAIL.RU </li>
