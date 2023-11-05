@@ -97,15 +97,15 @@ module.exports = function Layout({
                 <a href="tel:+74957951054" className="phone_link">
                   <p className="contact_header__text">📞 +7(495)7951054</p>
                 </a>
-                <a href="tel:+79256050225" className="phone_link">
-                  <p className="contact_header__text">📞 +7(925)6050225</p>
+                <a href="tel:+74957951054" className="phone_link">
+                  <p className="contact_header__text">📞 +7(495)7951054</p>
                 </a>
                 <a href="tel:+79854723376" className="phone_link">
                   <p className="contact_header__text">📞 +7(985)4723376</p>
                 </a>
-                <a href="https://wa.me/79686361472" className="whatsapp_link">
+                <a href="https://wa.me/79854723376" className="whatsapp_link">
                   <img src="/image/whatsapp24.png" alt="whatsapp" />
-                  +7(968)6361472
+                  +7(985)4723376
                 </a>
                 <a
                   href="mailto: &#x69;&#x6e;&#x6d;&#x61;&#x72;&#x63;&#x6f;&#x70;&#x6c;&#x75;&#x73;&#x40;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x72;&#x75;"
@@ -288,15 +288,15 @@ module.exports = function Layout({
                   <a href="tel:+74957951054" className="phone_link">
                     <p className="contact_header__text">📞 +7(495)7951054</p>
                   </a>
-                  <a href="tel:+79256050225" className="phone_link">
-                    <p className="contact_header__text">📞 +7(925)6050225</p>
+                  <a href="tel:+74957951054" className="phone_link">
+                    <p className="contact_header__text">📞 +7(495)7951054</p>
                   </a>
                   <a href="tel:+79854723376" className="phone_link">
                     <p className="contact_header__text">📞 +7(985)4723376</p>
                   </a>
-                  <a href="https://wa.me/79686361472" className="whatsapp_link">
+                  <a href="https://wa.me/79854723376" className="whatsapp_link">
                     <img src="/image/whatsapp24.png" alt="whatsapp" />
-                    +7(968)6361472
+                    +7(985)4723376
                   </a>
                 </div>
                 <div className="email_contact">
