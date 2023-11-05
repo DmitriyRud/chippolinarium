@@ -97,9 +97,6 @@ module.exports = function Layout({
                 <a href="tel:+74957951054" className="phone_link">
                   <p className="contact_header__text">📞 +7(495)7951054</p>
                 </a>
-                <a href="tel:+74957951054" className="phone_link">
-                  <p className="contact_header__text">📞 +7(495)7951054</p>
-                </a>
                 <a href="tel:+79854723376" className="phone_link">
                   <p className="contact_header__text">📞 +7(985)4723376</p>
                 </a>
@@ -285,9 +282,6 @@ module.exports = function Layout({
               <div className="info_container">
                 <div className="sales_department">
                   <h4 className="footer-title">Отдел продаж:</h4>
-                  <a href="tel:+74957951054" className="phone_link">
-                    <p className="contact_header__text">📞 +7(495)7951054</p>
-                  </a>
                   <a href="tel:+74957951054" className="phone_link">
                     <p className="contact_header__text">📞 +7(495)7951054</p>
                   </a>
