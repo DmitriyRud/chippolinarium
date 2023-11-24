@@ -68,7 +68,6 @@ module.exports = function PriceList({ categories, email, prices, items }) {
                 <td colSpan="2" className="category-title">
                   {category.title}
                 </td>
-                <td>0.25</td>
                 <td>0.5</td>
                 <td>1</td>
                 <td>3</td>
@@ -90,20 +89,6 @@ module.exports = function PriceList({ categories, email, prices, items }) {
                     )}
 
                     <td>{price['Item.name']}</td>
-                    <td>
-                      {email ? (
-                        <input
-                          name="input-kg025"
-                          type="number"
-                          className="price-inputs"
-                          id={`input-kg025-${price.item_id}`}
-                          value={`${price.kg025}`}
-                          onChange={() => {}}
-                        />
-                      ) : (
-                        displayPrice(price.kg025)
-                      )}
-                    </td>
                     <td>
                       {email ? (
                         <input

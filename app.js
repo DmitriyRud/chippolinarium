@@ -56,7 +56,6 @@ app.use((req, res, next) => {
   }
 });
 
-app.use('/', indexRouter);
 app.use('/contacts', contactsRouter);
 app.use('/feedback', feedBackRouter);
 app.use('/accountPanel', isAuth, accountPanelRouter);
@@ -66,6 +65,7 @@ app.use('/about', aboutRouter);
 app.use('/adminPanel', adminPanel);
 app.use('/modalpice', modalRouter);
 app.use('/prices', priceListRouter);
+app.use('/', indexRouter);
 
 app.get('/404', (req, res) => {
   res.send('Page not found');

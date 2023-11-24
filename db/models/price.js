@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
   Price.init(
     {
       item_id: DataTypes.INTEGER,
-      kg025: DataTypes.FLOAT,
       kg05: DataTypes.FLOAT,
       kg1: DataTypes.FLOAT,
       kg3: DataTypes.FLOAT,

@@ -4,7 +4,7 @@ const priceTable = document.getElementById('price-table');
 const buttonSave1 = document.getElementById('btnSave-1');
 const buttonSave2 = document.getElementById('btnSave-2');
 const priceContainer = document.getElementById('price-container');
-const PACKAGES = ['kg025', 'kg05', 'kg1', 'kg3', 'kg5', 'kg10'];
+const PACKAGES = ['kg05', 'kg1', 'kg3', 'kg5', 'kg10'];
 
 priceContainer.addEventListener('click', async (e) => {
   if (e.target.id.includes('btnSave-')) {
